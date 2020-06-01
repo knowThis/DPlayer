@@ -311,6 +311,10 @@ class Controller {
     }
 
     show() {
+        if (!this.player.options.controls) {
+            this.hide();
+            return;
+        }
         this.player.container.classList.remove('dplayer-hide-controller');
     }
 

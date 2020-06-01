@@ -146,6 +146,10 @@ class DPlayer {
             this.play();
         }
 
+        if (!this.options.controls) {
+            this.controller.hide();
+        }
+
         index++;
         instances.push(this);
     }
